@@ -44,22 +44,22 @@ li a:hover:not(.active) {
 
 .bgimage1 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
-  min-height: 100%;
+  min-height: 500px;
 }
 
 .bgimage2 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_8001_print.jpg?raw=true");
-  min-height: 100%;
+  min-height: 500px;
 }
 
 .bgimage3 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/20190824_001_edit.jpg?raw=true");
-  min-height: 100%;
+  min-height: 500px;
 }
 
 .bgimage4 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_1062_edit.jpg?raw=true");
-  min-height: 100%;
+  min-height: 500px;
 }
 
 /* If you wanna add a final contact/questions page bg picture
