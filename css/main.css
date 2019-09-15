@@ -2,13 +2,13 @@ body {
     /* background: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true") no-repeat center fixed; */
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8;
+    font-family: Open Sans;
 }
 
 /*----------Navigation bar formatting----------*/
 
 .navbar {
-    background-color: rgb(75,75,75);
+    background-color: transparent;
     overflow: hidden;
     opacity: 0.75;
 }
@@ -19,6 +19,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 25px;
 }
 
 .navbar a:hover {
@@ -74,7 +75,7 @@ body {
 .namelogo span.border{
     background-color: #111;
     color: #fff;
-    padding: 18px;
+    padding: 10px;
     font-size: 50px;
     letter-spacing: 10px;
 }
