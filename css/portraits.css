@@ -4,30 +4,28 @@ body {
     opacity: 0.75;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/*----------Navigation bar formatting----------*/
+
+.navbar {
+    background-color: rgb(75,75,75);
     overflow: hidden;
-    background-color: #333;
+    opacity: 0.75;
 }
 
-li {
+.navbar a {
     float: left;
-}
-
-li a {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+.navbar a:hover {
+    background-color: rgb(125,125,125);
+    color: white;
 }
 
-.active {
-    background-color: rgb(100,100,100);
+.navbar a.active {
+    background-color: rgb(175,175,175);
+    color: white;
 }
