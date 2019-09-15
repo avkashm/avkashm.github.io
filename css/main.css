@@ -32,22 +32,42 @@ li a:hover:not(.active) {
     background-color: rgb(100,100,100);
 }
 
-.parallax {
-  /* The image used */
-  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
-
-  /* Set a specific height */
-  min-height: 750px;
-
-  /* Set opacity*/
-  opacity: 0.5;
+.bgimage1, .bgimage2, .bgimage3, .bgimage4 {
+  position: relative;  
+  opacity: 0.6;
   
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.bgimage1 {
+  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
+  min-height: 100%;
+}
+
+.bgimage2 {
+  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_8001_print.jpg?raw=true");
+  min-height: 100%;
+}
+
+.bgimage3 {
+  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/20190824_001_edit.jpg?raw=true");
+  min-height: 100%;
+}
+
+.bgimage4 {
+  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_1062_edit.jpg?raw=true");
+  min-height: 100%;
+}
+
+/* If you wanna add a final contact/questions page bg picture
+.bgimage5 {
+  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
+  min-height: 100%;
+}*/
+
 
 h1 {
     color: navy;
