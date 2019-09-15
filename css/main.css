@@ -1,12 +1,7 @@
 body {
-    background-image: url("/backgroundImages/_MG_0710_edit.jpg");
+    background-color: lightblue;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
-
-h1 {
-    color: navy;
-    margin-left: 20px;
 }
 
 ul {
@@ -35,4 +30,9 @@ li a:hover {
 
 .active {
     background-color: #4CAF50;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
 }
