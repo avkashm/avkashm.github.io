@@ -37,7 +37,7 @@ li a:hover:not(.active) {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
 
   /* Set a specific height */
-  height: 750px;
+  min-height: 750px;
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
