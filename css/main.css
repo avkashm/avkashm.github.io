@@ -41,7 +41,7 @@ li a:hover:not(.active) {
 
 .bgimage1, .bgimage2, .bgimage3, .bgimage4 {
   position: relative;  
-  opacity: 0.6;
+  opacity: 0.75;
   min-height: 600px;
   
   background-attachment: fixed;
