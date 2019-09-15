@@ -12,7 +12,6 @@ body {
     overflow: hidden;
     opacity: 0.75;
     position: fixed;
-    text-align: center;
 }
 
 .navbar a {
@@ -71,15 +70,17 @@ body {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: rgb(125,125,125);
+    color: rgb(25,25,25);
+}
+
+.namelogo span {
+    font-size: 25px;
+    color: lightgray;
 }
 
 .namelogo span.border{
     background-color: rgb(75,75,75);
-    color: white;
-    padding: 10px;
-    font-size: 75px;
-    letter-spacing: 5px;
+    padding: auto;
 }
 
 .subcategory {
@@ -88,13 +89,15 @@ body {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: rgb(125,125,125);
+    color: rgb(25,25,25);
+}
+
+.subcategory span {
+    font-size: 20px;
+    color: lightgray;
 }
 
 .subcategory span.border{
     background-color: rgb(75,75,75);
-    color: white;
-    padding: 10px;
-    font-size: 50px;
-    letter-spacing: 5px;
+    padding: auto;
 }
