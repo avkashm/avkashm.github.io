@@ -1,7 +1,7 @@
 body {
     /* background: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true") no-repeat center fixed; */
-    background-color: lightblue;
-    background-size: cover;
+    height: 100%;
+    margin: 0;
 }
 
 ul {
@@ -30,6 +30,10 @@ li a:hover:not(.active) {
 
 .active {
     background-color: rgb(100,100,100);
+}
+
+.navbar {
+    
 }
 
 .bgimage1, .bgimage2, .bgimage3, .bgimage4 {
