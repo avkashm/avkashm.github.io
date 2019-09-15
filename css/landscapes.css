@@ -1,7 +1,7 @@
 body {
-	background: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_1062_edit.jpg?raw=true") no-repeat center fixed;
-    background-size: cover;
-    opacity: 0.75;
+    height: 100%;
+    margin: 0;
+    font-family: Open Sans;
 }
 
 /*----------Navigation bar formatting----------*/
@@ -9,8 +9,9 @@ body {
 .navbar {
     background-color: rgb(75,75,75);
     overflow: hidden;
-    opacity: 0.75;
     position: fixed;
+    top: 10px;
+    left: 5px;
 }
 
 .navbar a {
@@ -30,4 +31,18 @@ body {
 .navbar a.active {
     background-color: rgb(175,175,175);
     color: white;
+}
+
+/*----------Parallax image formatting----------*/
+
+.bgimage4 {
+  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_1062_edit.jpg?raw=true");
+  position: relative;  
+  opacity: 0.75;
+  min-height: 600px;
+  
+  background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,5 +1,4 @@
 body {
-    /* background: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true") no-repeat center fixed; */
     height: 100%;
     margin: 0;
     font-family: Open Sans;
@@ -11,7 +10,9 @@ body {
     background-color: rgb(75,75,75);
     overflow: hidden;
     position: fixed;
+    text-align: center;
     top: 10px;
+    left: 5px;
 }
 
 .navbar a {
@@ -65,7 +66,7 @@ body {
 /*----------Subcategory link formatting----------*/
 
 .namelogo {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 50%;
     width: 100%;
@@ -84,7 +85,7 @@ body {
 }
 
 .subcategory {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 50%;
     width: 100%;
