@@ -1,7 +1,5 @@
 body {
-    background-image: url("https://github.com/avkashm/avkashm.github.io/tree/master/backgroundImages/_MG_0710_edit.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+	background-color: lightblue;
 }
 
 ul {
@@ -30,9 +28,4 @@ li a:hover {
 
 .active {
     background-color: #4CAF50;
-}
-
-h1 {
-    color: navy;
-    margin-left: 20px;
 }
