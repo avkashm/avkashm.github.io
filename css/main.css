@@ -34,12 +34,15 @@ li a:hover:not(.active) {
 }
 
 .navbar {
-    
+
 }
+
+/*----------Parallax image formatting----------*/
 
 .bgimage1, .bgimage2, .bgimage3, .bgimage4 {
   position: relative;  
   opacity: 0.6;
+  min-height: 600px;
   
   background-attachment: fixed;
   background-position: center; 
@@ -49,23 +52,21 @@ li a:hover:not(.active) {
 
 .bgimage1 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
-  min-height: 500px;
 }
 
 .bgimage2 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_8001_print.jpg?raw=true");
-  min-height: 500px;
 }
 
 .bgimage3 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/20190824_001_edit.jpg?raw=true");
-  min-height: 500px;
 }
 
 .bgimage4 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_1062_edit.jpg?raw=true");
-  min-height: 500px;
 }
+
+/*----------Subcategory link formatting----------*/
 
 .namelogo {
     position: absolute;
