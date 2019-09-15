@@ -2,6 +2,7 @@ body {
     /* background: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true") no-repeat center fixed; */
     height: 100%;
     margin: 0;
+    font: 400 15px/1.8;
 }
 
 ul {
@@ -33,7 +34,7 @@ li a:hover:not(.active) {
 }
 
 .navbar {
-
+    
 }
 
 .bgimage1, .bgimage2, .bgimage3, .bgimage4 {
@@ -77,6 +78,23 @@ li a:hover:not(.active) {
 
 .namelogo span.border{
     background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.subcategory {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #111;
+}
+
+.subcategory span.border{
+    background-color: #000;
     color: #fff;
     padding: 18px;
     font-size: 50px;
