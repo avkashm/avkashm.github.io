@@ -38,6 +38,9 @@ li a:hover:not(.active) {
 
   /* Set a specific height */
   min-height: 750px;
+
+  /* Set opacity*/
+  opacity: 0.5;
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
