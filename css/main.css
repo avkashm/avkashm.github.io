@@ -12,8 +12,8 @@ body {
     overflow: hidden;
     opacity: 0.75;
     position: fixed;
+    text-align: center;
     top: 10px;
-    width: 75%;
 }
 
 .navbar a {
