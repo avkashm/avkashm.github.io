@@ -33,7 +33,7 @@ li a:hover:not(.active) {
 }
 
 .navbar {
-    
+
 }
 
 .bgimage1, .bgimage2, .bgimage3, .bgimage4 {
@@ -64,6 +64,23 @@ li a:hover:not(.active) {
 .bgimage4 {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_1062_edit.jpg?raw=true");
   min-height: 500px;
+}
+
+.namelogo {
+    position: 0;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.namelogo span.border{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
 /* If you wanna add a final contact/questions page bg picture
