@@ -13,7 +13,6 @@ body {
     opacity: 0.75;
     position: fixed;
     text-align: center;
-    top: 10px;
 }
 
 .navbar a {
@@ -72,15 +71,15 @@ body {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: rgb(125,125,125);
 }
 
 .namelogo span.border{
-    background-color: #111;
-    color: #fff;
+    background-color: rgb(75,75,75);
+    color: white;
     padding: 10px;
-    font-size: 50px;
-    letter-spacing: 10px;
+    font-size: 75px;
+    letter-spacing: 5px;
 }
 
 .subcategory {
@@ -89,13 +88,13 @@ body {
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #111;
+    color: rgb(125,125,125);
 }
 
 .subcategory span.border{
-    background-color: #000;
-    color: #fff;
-    padding: 18px;
+    background-color: rgb(75,75,75);
+    color: white;
+    padding: 10px;
     font-size: 50px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
