@@ -35,7 +35,7 @@ body {
 
 /*----------Parallax image formatting----------*/
 
-.bgimage3 {
+.bgimage {
   background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/20190824_001_edit.jpg?raw=true");
   position: relative;  
   opacity: 0.75;
