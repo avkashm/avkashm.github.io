@@ -73,7 +73,7 @@ body {
 }
 
 .namelogo span {
-    font-size: 25px;
+    font-size: 50px;
     color: lightgray;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .subcategory span {
-    font-size: 20px;
+    font-size: 40px;
     color: lightgray;
 }
 
