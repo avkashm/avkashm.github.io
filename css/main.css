@@ -1,5 +1,7 @@
 body {
-    background-color: lightblue;
+    background-image: url("/backgroundImages/_MG_0710_edit.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 h1 {
