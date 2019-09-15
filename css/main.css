@@ -67,7 +67,7 @@ li a:hover:not(.active) {
 }
 
 .namelogo {
-    position: 0;
+    position: absolute;
     left: 0;
     top: 50%;
     width: 100%;
@@ -79,18 +79,6 @@ li a:hover:not(.active) {
     background-color: #111;
     color: #fff;
     padding: 18px;
-    font-size: 25px;
+    font-size: 50px;
     letter-spacing: 10px;
-}
-
-/* If you wanna add a final contact/questions page bg picture
-.bgimage5 {
-  background-image: url("https://github.com/avkashm/avkashm.github.io/blob/master/backgroundImages/_MG_0710_edit.jpg?raw=true");
-  min-height: 100%;
-}*/
-
-
-h1 {
-    color: navy;
-    margin-left: 20px;
 }
