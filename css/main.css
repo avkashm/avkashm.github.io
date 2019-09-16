@@ -7,7 +7,7 @@ body {
 /*----------Navigation bar formatting----------*/
 
 .navbar {
-    background-color: rgb(75,75,75);
+    background-color: transparent;
     overflow: hidden;
     position: fixed;
     text-align: center;
@@ -25,13 +25,11 @@ body {
 }
 
 .navbar a:hover {
-    background-color: rgb(125,125,125);
-    color: white;
+    color: rgb(125,125,125);
 }
 
 .navbar a.active {
-    background-color: rgb(175,175,175);
-    color: white;
+    color: rgb(175,175,175);
 }
 
 /*----------Parallax image formatting----------*/
@@ -66,39 +64,41 @@ body {
 /*----------Subcategory link formatting----------*/
 
 .namelogo {
-    position: relative;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: rgb(25,25,25);
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: rgb(25,25,25);
 }
 
 .namelogo span {
-    font-size: 50px;
-    color: darkgray;
+  top: 25%;
+  font-size: 50px;
+  color: darkgray;
 }
 
 .namelogo span.border{
-    background-color: rgb(75,75,75);
-    padding: auto;
+  background-color: rgb(75,75,75);
+  padding: auto;
 }
 
 .subcategory {
-    position: relative;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: rgb(25,25,25);
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: rgb(25,25,25);
 }
 
 .subcategory span {
-    font-size: 40px;
-    color: darkgray;
+  top: 25%;
+  font-size: 40px;
+  color: darkgray;
 }
 
 .subcategory span.border{
-    background-color: rgb(75,75,75);
-    padding: auto;
+  background-color: rgb(75,75,75);
+  padding: auto;
 }
