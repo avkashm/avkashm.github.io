@@ -7,9 +7,10 @@ body {
 /*----------Navigation bar formatting----------*/
 
 .navbar {
-    background-color: rgb(75,75,75);
+    background-color: transparent;
     overflow: hidden;
     position: fixed;
+    text-align: center;
     top: 10px;
     left: 5px;
 }
@@ -24,13 +25,11 @@ body {
 }
 
 .navbar a:hover {
-    background-color: rgb(125,125,125);
-    color: white;
+    color: rgb(125,125,125);
 }
 
 .navbar a.active {
-    background-color: rgb(175,175,175);
-    color: white;
+    color: rgb(175,175,175);
 }
 
 /*----------Parallax image formatting----------*/
