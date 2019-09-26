@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<title>Esperanza-Landscapes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Parallax formatting*/
+
+.bgimg-1 {
+  background-image: url("./contentImages/20190824_001_edit.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="/stories.html" class="w3-bar-item w3-button w3-hide-small"><i></i> STORIES</a>
+    <a href="/moments.html" class="w3-bar-item w3-button w3-hide-small"><i></i> MOMENTS</a>
+    <a href="/landscapes.html" class="w3-bar-item w3-button w3-hide-small"><i></i>LANDSCAPES</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="/stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STORIES</a>
+    <a href="/moments.html" class="w3-bar-item w3-button" onclick="toggleFunction()">MOMENTS</a>
+    <a href="/landscapes.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LANDSCAPES</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-white w3-wide">Landscapes</span>
+  </div>
+</div>
+
+<!-- Container (Main Content ) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <i><h3 class="w3-center">Landscapes something something</h3></i>
+  <p> This blah blah blah Ryu Fuji blah blah blah</p>
+</div>
+
+
+<!-- Gallery with stories -->
+
+<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
+
+	<div class="w3-row-padding w3-center">
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_7919_edit.jpg" style="width:100%" onclick="document.getElementById('fujiNightSky').style.display='block'" class="w3-hover-opacity" alt="North Star">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_1285_edit.jpg" style="width:100%" onclick="document.getElementById('fujiNightClimbers').style.display='block'" class="w3-hover-opacity" alt="Morning Rush">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_1069_edit.jpg" style="width:100%" onclick="document.getElementById('kitaWhite').style.display='block'" class="w3-hover-opacity" alt="A Ridge to Yourself">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_0710_edit.jpg" style="width:100%" onclick="document.getElementById('kitaTents').style.display='block'" class="w3-hover-opacity" alt="2-star Hotel">
+	    </div>
+  </div>
+
+  <!-- Image modal config-->
+
+  <div id="fujiNightSky" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('fujiNightSky').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>North Star</h1>
+        <h4>23:43</h4>
+        <h4>20.0 sec|ISO 1000|f2.8</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_7919_edit.jpg" alt="fujiNightSky" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fujiNightClimbers" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('fujiNightClimbers').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Morning Rush</h1>
+        <h4>03:24</h4>
+        <h4>2.0 sec|ISO 800|f3.5</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_1285_edit.jpg" alt="fujiNightClimbers" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="kitaWhite" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('kitaWhite').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>A Ridge to Yourself</h1>
+        <h4>10:57</h4>
+        <h4>1/8000 sec|ISO 100|f2.8</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_1069_edit.jpg" alt="kitaWhite" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="kitaTents" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('kitaTents').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>2-star Hotel</h1>
+        <h4>06:49</h4>
+        <h4>1/3200 sec|ISO 100|f3.5</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_0710_edit.jpg" alt="kitaTents" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-opacity w3-hover-opacity-off">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-envelope w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
