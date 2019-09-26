@@ -75,7 +75,7 @@ body, html {
 
 
 <!-- Gallery with stories -->
-<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
+<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery1">
 
 	<div class="w3-row-padding w3-center">
 	    <div class="w3-col m3">
@@ -93,7 +93,17 @@ body, html {
 	    <div class="w3-col m3">
 	      <img src="./images/stories4pre.jpg" style="width:100%" onclick="document.getElementById('threeClimbers').style.display='block'" class="w3-hover-opacity" alt="Lead the Way">
 	    </div>
+	    
   </div>
+
+  <div class="w3-content w3-container w3-padding-64 w3-center" id="gallery2">
+
+  	<div class="w3-col m3">
+	      <img src="./images/stories5pre.jpg" style="width:100%" onclick="document.getElementById('gardener').style.display='block'" class="w3-hover-opacity" alt="Behind the scenes">
+	</div>
+
+  </div>
+
 
   <!-- Image modal config-->
 
@@ -109,7 +119,7 @@ body, html {
       </header>
       <div class="w3-container">
       	<img src="./images/stories1.jpg" alt="breadGrill" style="width:100%"></img>
-        <p>Story line 1</p>
+        <p>Charcoal-grilled pizza-pan may be as fancy as conbini bread gets</p>
       </div>
     </div>
   </div>
@@ -126,7 +136,7 @@ body, html {
       </header>
       <div class="w3-container">
       	<img src="./images/stories2.jpg" alt="shizuFish" style="width:100%"></img>
-        <p>Story line 1</p>
+        <p>"Avi! Get the coal hot. As hot as it goes then bring it to me through the back". I carried the scorching bucket of coal through the back door of the kitchen to find Shizu-san kneeling by his stool with a grill in one hand and a pair of chopsticks in the other. He slapped the grill onto the bucket, and started gently laying the salmon on the grill, one piece at a time. Half way through the plate he looked up, saw me staring right back at him, and yelled "Leave! But come back in 20 to heat the coal up again"</p>
       </div>
     </div>
   </div>
@@ -161,6 +171,23 @@ body, html {
       <div class="w3-container">
       	<img src="./images/stories4.jpg" alt="threeClimbers" style="width:100%"></img>
         <p>The three climbers from Shizuoka</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="gardener" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('gardener').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Behind the scenes</h1>
+        <h4>15:07</h4>
+        <h4>1/2000 sec|ISO 320|f/2.8</h4>
+        <h4>Kyoto</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./images/stories5.jpg" alt="gardener" style="width:100%"></img>
+        <p>What we don't see, or look for</p>
       </div>
     </div>
   </div>
