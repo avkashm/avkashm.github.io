@@ -77,62 +77,95 @@ body, html {
 <!-- Gallery with stories -->
 <div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
 
-	<button onclick="document.getElementById('breadGrill').style.display='block'" class="w3-button w3-black">Breakfast</button>
-	<button onclick="document.getElementById('shizuFish').style.display='block'" class="w3-button w3-black">Shakee</button>
-	<button onclick="document.getElementById('jrPuff').style.display='block'" class="w3-button w3-black">Sorry, we are closed</button>
-
-	  <div id="breadGrill" class="w3-modal">
-	    <div class="w3-modal-content w3-animate-opacity">
-	      <header class="w3-container w3-lightgrey"> 
-	        <span onclick="document.getElementById('breadGrill').style.display='none'" 
-	        class="w3-button w3-display-topright">&times;</span>
-	        <h1>Fire up the Grill</h1>
-	        <h4> 06:31</h4>
-	        <h4>1/100 sec|ISO 400|f3.5</h4>
-	      </header>
-	      <div class="w3-container">
-	      	<img src="./contentImages/20190826_032_edit.jpg" alt="breadGrill" style="width:100%"></img>
-	        <p>Story line 1</p>
-	        <p>Story line 2</p>
-	      </div>
+	<div class="w3-row-padding w3-center">
+	    <div class="w3-col m3">
+	      <img src="./contentImages/20190826_032_edit.jpg" style="width:100%" onclick="document.getElementById('breadGrill').style.display='block'" class="w3-hover-opacity" alt="Fire up the Grill">
 	    </div>
-	  </div>
 
-	  <div id="shizuFish" class="w3-modal">
-	    <div class="w3-modal-content w3-animate-opacity">
-	      <header class="w3-container w3-lightgrey"> 
-	        <span onclick="document.getElementById('shizuFish').style.display='none'" 
-	        class="w3-button w3-display-topright">&times;</span>
-	        <h1>Patience</h1>
-	        <h4>08:16</h4>
-	        <h4>1/320 sec|ISO 400|f2.8</h4>
-	      </header>
-	      <div class="w3-container">
-	      	<img src="./contentImages/20190824_010_edit_2.jpg" alt="shizuFish" style="width:100%"></img>
-	        <p>Story line 1</p>
-	        <p>Story line 2</p>
-	      </div>
+	    <div class="w3-col m3">
+	      <img src="./contentImages/20190824_010_edit_2.jpg" style="width:100%" onclick="document.getElementById('shizuFish').style.display='block'" class="w3-hover-opacity" alt="Mouthwatering">
 	    </div>
-	  </div>
 
-	  <div id="jrPuff" class="w3-modal">
-	    <div class="w3-modal-content w3-animate-opacity">
-	      <header class="w3-container w3-lightgrey"> 
-	        <span onclick="document.getElementById('jrPuff').style.display='none'" 
-	        class="w3-button w3-display-topright">&times;</span>
-	        <h1>Sorry, we are Closed</h1>
-	        <h4>17:41</h4>
-	        <h4>1/125 sec|ISO 400|f2.8</h4>
-	      </header>
-	      <div class="w3-container">
-	      	<img src="./contentImages/20190825_014_edit.jpg" alt="jrPuff" style="width:100%"></img>
-	        <p>Story line 1</p>
-	        <p>Story line 2</p>
-	      </div>
+	    <div class="w3-col m3">
+	      <img src="./contentImages/20190825_014_edit.jpg" style="width:100%" onclick="document.getElementById('jrPuff').style.display='block'" class="w3-hover-opacity" alt="Sorry, We are Closed">
 	    </div>
-	  </div>
 
-	</div>
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_0964_edit.jpg" style="width:100%" onclick="document.getElementById('threeClimbers').style.display='block'" class="w3-hover-opacity" alt="Lead the Way">
+	    </div>
+  </div>
+
+  <!-- Image modal config-->
+
+  <div id="breadGrill" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('breadGrill').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Fire up the Grill</h1>
+        <h4> 06:31</h4>
+        <h4>1/100 sec|ISO 400|f3.5</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/20190826_032_edit.jpg" alt="breadGrill" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="shizuFish" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('shizuFish').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Mouthwatering</h1>
+        <h4>08:16</h4>
+        <h4>1/320 sec|ISO 400|f2.8</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/20190824_010_edit_2.jpg" alt="shizuFish" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="jrPuff" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('jrPuff').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Sorry, We are Closed</h1>
+        <h4>17:41</h4>
+        <h4>1/125 sec|ISO 400|f2.8</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/20190825_014_edit.jpg" alt="jrPuff" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="threeClimbers" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('threeClimbers').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Lead the Way</h1>
+        <h4>06:32</h4>
+        <h4>1/800 sec|ISO 100|f6.3</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_0964_edit.jpg" alt="threeClimbers" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 <!-- Footer -->
