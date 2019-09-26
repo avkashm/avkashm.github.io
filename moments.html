@@ -76,6 +76,97 @@ body, html {
 
 <!-- Gallery with modal stories -->
 
+<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
+
+	<div class="w3-row-padding w3-center">
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_8009_edit.jpg" style="width:100%" onclick="document.getElementById('janken').style.display='block'" class="w3-hover-opacity" alt="Say Cheese">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_8110_edit.jpg" style="width:100%" onclick="document.getElementById('yakiin').style.display='block'" class="w3-hover-opacity" alt="Self-Proclaimed King">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_0904_edit.jpg" style="width:100%" onclick="document.getElementById('mistMan').style.display='block'" class="w3-hover-opacity" alt="Mysterio">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_8177_edit.jpg" style="width:100%" onclick="document.getElementById('bubbles').style.display='block'" class="w3-hover-opacity" alt="Bubbles for Breakfast">
+	    </div>
+  </div>
+
+  <!-- Image modal config-->
+
+  <div id="janken" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('janken').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Say Cheese</h1>
+        <h4>10:19</h4>
+        <h4>1/60 sec|ISO 100|f2.0</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_8009_edit.jpg" alt="janken" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="yakiin" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('yakiin').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Self-Proclaimed King</h1>
+        <h4>09:32</h4>
+        <h4>1/5000 sec|ISO 100|f1.0</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_8110_edit.jpg" alt="yakiin" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="mistMan" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('mistMan').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Mysterio</h1>
+        <h4>15:34</h4>
+        <h4>1/8000 sec|ISO 100|f5.0</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_0904_edit.jpg" alt="mistMan" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="bubbles" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('bubbles').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Bubbles for Breakfast</h1>
+        <h4>10:40</h4>
+        <h4>1/100 sec|ISO 100|f10.0</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_8177_edit.jpg" alt="bubbles" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-opacity w3-hover-opacity-off">

@@ -76,6 +76,97 @@ body, html {
 
 <!-- Gallery with stories -->
 
+<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
+
+	<div class="w3-row-padding w3-center">
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_7919_edit.jpg" style="width:100%" onclick="document.getElementById('fujiNightSky').style.display='block'" class="w3-hover-opacity" alt="North Star">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_1285_edit.jpg" style="width:100%" onclick="document.getElementById('fujiNightClimbers').style.display='block'" class="w3-hover-opacity" alt="Morning Rush">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_1069_edit.jpg" style="width:100%" onclick="document.getElementById('kitaWhite').style.display='block'" class="w3-hover-opacity" alt="A Ridge to Yourself">
+	    </div>
+
+	    <div class="w3-col m3">
+	      <img src="./contentImages/1MG_0710_edit.jpg" style="width:100%" onclick="document.getElementById('kitaTents').style.display='block'" class="w3-hover-opacity" alt="2-star Hotel">
+	    </div>
+  </div>
+
+  <!-- Image modal config-->
+
+  <div id="fujiNightSky" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('fujiNightSky').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>North Star</h1>
+        <h4>23:43</h4>
+        <h4>20.0 sec|ISO 1000|f2.8</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_7919_edit.jpg" alt="fujiNightSky" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fujiNightClimbers" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('fujiNightClimbers').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Morning Rush</h1>
+        <h4>03:24</h4>
+        <h4>2.0 sec|ISO 800|f3.5</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_1285_edit.jpg" alt="fujiNightClimbers" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="kitaWhite" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('kitaWhite').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>A Ridge to Yourself</h1>
+        <h4>10:57</h4>
+        <h4>1/8000 sec|ISO 100|f2.8</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_1069_edit.jpg" alt="kitaWhite" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="kitaTents" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+      <header class="w3-container w3-lightgrey"> 
+        <span onclick="document.getElementById('kitaTents').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>2-star Hotel</h1>
+        <h4>06:49</h4>
+        <h4>1/3200 sec|ISO 100|f3.5</h4>
+      </header>
+      <div class="w3-container">
+      	<img src="./contentImages/1MG_0710_edit.jpg" alt="kitaTents" style="width:100%"></img>
+        <p>Story line 1</p>
+        <p>Story line 2</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-opacity w3-hover-opacity-off">
