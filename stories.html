@@ -75,9 +75,10 @@ body, html {
 
 
 <!-- Gallery with stories -->
-<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery1">
+<div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
 
 	<div class="w3-row-padding w3-center">
+
 	    <div class="w3-col m3">
 	      <img src="./images/stories1pre.jpg" style="width:100%" onclick="document.getElementById('breadGrill').style.display='block'" class="w3-hover-opacity" alt="Fire up the Grill">
 	    </div>
@@ -93,31 +94,29 @@ body, html {
 	    <div class="w3-col m3">
 	      <img src="./images/stories4pre.jpg" style="width:100%" onclick="document.getElementById('threeClimbers').style.display='block'" class="w3-hover-opacity" alt="Lead the Way">
 	    </div>
-	    
-  </div>
 
-  <div class="w3-content w3-container w3-padding-64 w3-center" id="gallery2">
+	</div>
 
-  	<div class="w3-row-padding w3-center">
+	<div class="w3-row-padding w3-center w3-section">
 
 	  	<div class="w3-col m3">
-		      <img src="./images/stories5pre.jpg" style="width:100%" onclick="document.getElementById('gardener').style.display='block'" class="w3-hover-opacity" alt="Behind the scenes">
+		  <img src="./images/stories5pre.jpg" style="width:100%" onclick="document.getElementById('gardener').style.display='block'" class="w3-hover-opacity" alt="Behind the scenes">
 		</div>
 
 		<div class="w3-col m3">
-		      <img src="./images/stories6pre.jpg" style="width:100%" onclick="document.getElementById('future').style.display='block'" class="w3-hover-opacity" alt="Thank You Young People">
+		  <img src="./images/stories6pre.jpg" style="width:100%" onclick="document.getElementById('future').style.display='block'" class="w3-hover-opacity" alt="Thank You Young People">
 		</div>
-		
+
 	</div>
 
-  </div>
+</div>
 
 
   <!-- Image modal config-->
 
   <div id="breadGrill" class="w3-modal">
     <div class="w3-modal-content w3-animate-opacity w3">
-      <header class="w3-container w3-lightgrey"> 
+      <header class="w3-container w3-lightgrey w3-center"> 
         <span onclick="document.getElementById('breadGrill').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h1>Fire up the grill</h1>
@@ -125,7 +124,7 @@ body, html {
         <h4>1/100 sec|ISO 400|f/3.5</h4>
         <h4>Mount Fuji</h4>
       </header>
-      <div class="w3-container">
+      <div class="w3-container w3-center">
       	<img src="./images/stories1.jpg" alt="breadGrill" style="width:100%"></img>
         <p>Charcoal-grilled pizza-pan may be as fancy as conbini bread gets</p>
       </div>
@@ -134,15 +133,15 @@ body, html {
 
   <div id="shizuFish" class="w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
+      <header class="w3-container w3-lightgrey w3-center"> 
         <span onclick="document.getElementById('shizuFish').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h1>Mouth-watering</h1>
+        <h1>Drooling</h1>
         <h4>08:16</h4>
         <h4>1/320 sec|ISO 400|f/2.8</h4>
         <h4>Mount Fuji</h4>
       </header>
-      <div class="w3-container">
+      <div class="w3-container w3-center">
       	<img src="./images/stories2.jpg" alt="shizuFish" style="width:100%"></img>
         <p>"Avi! Get the coal hot. As hot as it goes then bring it to me through the back". I carried the scorching bucket of coal through the back door of the kitchen to find Shizu-san kneeling by his stool with a grill in one hand and a pair of chopsticks in the other. He slapped the grill onto the bucket, and started gently laying the salmon on the grill, one piece at a time. Half way through the plate he looked up, saw me staring right back at him, and yelled "Leave! But come back in 20 to heat the coal up again"</p>
       </div>
@@ -151,7 +150,7 @@ body, html {
 
   <div id="jrPuff" class="w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
+      <header class="w3-container w3-lightgrey w3-center"> 
         <span onclick="document.getElementById('jrPuff').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h1>Sorry, We are Closed</h1>
@@ -159,7 +158,7 @@ body, html {
         <h4>1/125 sec|ISO 400|f/2.8</h4>
         <h4>Mount Fuji</h4>
       </header>
-      <div class="w3-container">
+      <div class="w3-container w3-center">
       	<img src="./images/stories3.jpg" alt="jrPuff" style="width:100%"></img>
         <p>Story line 1</p>
       </div>
@@ -168,7 +167,7 @@ body, html {
 
   <div id="threeClimbers" class="w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
+      <header class="w3-container w3-lightgrey w3-center"> 
         <span onclick="document.getElementById('threeClimbers').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h1>Please, after you</h1>
@@ -176,7 +175,7 @@ body, html {
         <h4>1/800 sec|ISO 100|f/6.3</h4>
         <h4>Daisekkei</h4>
       </header>
-      <div class="w3-container">
+      <div class="w3-container w3-center">
       	<img src="./images/stories4.jpg" alt="threeClimbers" style="width:100%"></img>
         <p>The three climbers from Shizuoka</p>
       </div>
@@ -185,7 +184,7 @@ body, html {
 
   <div id="gardener" class="w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
+      <header class="w3-container w3-lightgrey w3-center"> 
         <span onclick="document.getElementById('gardener').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h1>Behind the scenes</h1>
@@ -193,7 +192,7 @@ body, html {
         <h4>1/2000 sec|ISO 320|f/2.8</h4>
         <h4>Kyoto</h4>
       </header>
-      <div class="w3-container">
+      <div class="w3-container w3-center">
       	<img src="./images/stories5.jpg" alt="gardener" style="width:100%"></img>
         <p>What we don't see, or look for</p>
       </div>
@@ -202,15 +201,15 @@ body, html {
 
   <div id="future" class="w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
+      <header class="w3-container w3-lightgrey w3-center"> 
         <span onclick="document.getElementById('future').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h1>Thank You Young People</h1>
+        <h1>Thank You Young People!</h1>
         <h4>12:19</h4>
         <h4>1/1600 sec|ISO 200|f/5.0</h4>
         <h4>Toronto</h4>
       </header>
-      <div class="w3-container">
+      <div class="w3-container w3-center">
       	<img src="./images/stories6.jpg" alt="future" style="width:100%"></img>
         <p>Fridays for Future</p>
       </div>
