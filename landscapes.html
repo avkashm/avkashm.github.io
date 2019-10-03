@@ -87,7 +87,7 @@ body, html {
 		-->
 
 	    <div class="w3-col m3">
-	      <img src="./images/landscapes2pre.jpg" style="width:100%" onclick="document.getElementById('fujiNightClimbers').style.display='block'" class="w3-hover-opacity" alt="Morning Rush">
+	      <img src="./images/landscapes2pre.jpg" style="width:100%" onclick="openModal();" class="w3-hover-opacity" alt="Morning Rush">
 	      <p>Morning rush</p>
 	    </div>
 
@@ -121,7 +121,7 @@ body, html {
     </div>
   </div> -->
 
-  <div id="fujiNightClimbers" class="w3-modal">
+  <div id="fujiNightClimbers" class="myModal w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
       <header class="w3-container w3-lightgrey"> 
         <span onclick="document.getElementById('fujiNightClimbers').style.display='none'" 
@@ -138,7 +138,7 @@ body, html {
     </div>
   </div>
 
-  <div id="kitaWhite" class="w3-modal">
+  <div id="kitaWhite" class="myModal w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
       <header class="w3-container w3-lightgrey"> 
         <span onclick="document.getElementById('kitaWhite').style.display='none'" 
@@ -155,7 +155,7 @@ body, html {
     </div>
   </div>
 
-  <div id="kitaTents" class="w3-modal">
+  <div id="kitaTents" class="myModal w3-modal">
     <div class="w3-modal-content w3-animate-opacity">
       <header class="w3-container w3-lightgrey"> 
         <span onclick="document.getElementById('kitaTents').style.display='none'" 
@@ -184,6 +184,32 @@ body, html {
 </footer>
  
 <script>
+
+function openModal() {
+  document.getElementsByClassName("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementsByClassName("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
