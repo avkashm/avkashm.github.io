@@ -46,9 +46,9 @@ body, html {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: darkgrey;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -56,11 +56,11 @@ body, html {
 }
 
 .prev {
-	left: 5%;
+	left: 0;
 }
 
 .next {
-	right: 5%;
+	right: 0;
 }
 
 </style>
@@ -109,10 +109,12 @@ body, html {
 
 	    <div class="w3-col m3">
 	      <img src="./images/moments2pre.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="w3-hover-opacity" alt="Self-Anointed King">
+	      <p>Self-Anointed King</p>
 	    </div>
 
 	    <div class="w3-col m3">
 	      <img src="./images/moments4pre.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="w3-hover-opacity" alt="Bubbles for Breakfast">
+	      <p>Bubbles for Breakfast</p>
 	    </div>
   </div>
 
@@ -124,7 +126,7 @@ body, html {
     	<span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
     	<div class="mySlides">
     		<header class="w3-container w3-lightgrey"> 
-		        <h1>Self-anointed King</h1>
+		        <h1>Self-Anointed King</h1>
 		        <h4>09:32</h4>
 		        <h4>1/5000 sec|ISO 100|f/2.0</h4>
 		        <h4>Mount Fuji</h4>
@@ -156,42 +158,6 @@ body, html {
 	    	</div>
     	</div>
 
-   		<!--
-      <header class="w3-container w3-lightgrey"> 
-        <span onclick="document.getElementById('yakiin').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h1>Self-anointed King</h1>
-        <h4>09:32</h4>
-        <h4>1/5000 sec|ISO 100|f/2.0</h4>
-        <h4>Mount Fuji</h4>
-      </header>
-      <div class="w3-container">
-      	<img src="./images/moments2.jpg" alt="yakiin" style="width:100%"></img>
-        <p>Story line 1</p>
-        <p>Story line 2</p>
-      </div>
-    </div>
-  </div> -->
-
-  <div id="bubbles" class="w3-modal">
-    <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
-        <span onclick="document.getElementById('bubbles').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h1>Bubbles for breakfast</h1>
-        <h4>10:40</h4>
-        <h4>1/100 sec|ISO 100|f/10.0</h4>
-        <h4>Mount Fuji</h4>
-      </header>
-      <div class="w3-container">
-      	<img src="./images/moments4.jpg" alt="bubbles" style="width:100%"></img>
-        <p>Adults enjoy playing with bubbles no less than children do.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-opacity w3-hover-opacity-off">
   <div class="w3-xlarge w3-section">
@@ -202,6 +168,15 @@ body, html {
 </footer>
  
 <script>
+// Get the modal
+var modalClick = document.getElementById('myModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalClick) {
+    modalClick.style.display = "none";
+  }
+}
 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
