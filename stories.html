@@ -37,6 +37,12 @@ body, html {
   }
 }
 
+.w3-modal-content {
+	width: 60%;
+	background-color: transparent;
+	object-fit: contain;
+}
+
 /* Previous/Next button config */
 .prev,
 .next{
@@ -61,6 +67,14 @@ body, html {
 
 .next {
 	right: 0;
+}
+
+.mySlides{
+	height: 100%;
+}
+
+.imgContent {
+	height: 100%;
 }
 </style>
 <body>
@@ -173,16 +187,20 @@ body, html {
     <div class="w3-modal-content w3-animate-opacity">
     	<span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
     	<div class="mySlides">
-    		<header class="w3-container w3-darkgrey w3-center"> 
+    		<!--
+    		<header class="w3-container w3-darkgrey w3-center">
+    		 
 		        <h1>Fire up the grill</h1>
 		        <h4> 06:31</h4>
 		        <h4>1/100 sec|ISO 400|f/3.5</h4>
 		        <h4>Mount Fuji</h4>
+		    
 	      	</header>
-	      	<div class="imgContent">
+	      	-->
+	      	<div class="imgContent w3-center">
 		      	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories1.jpg" alt="breadGrill" style="max-width: 100%"></img>
+	    		<img src="./images/stories1.jpg" alt="breadGrill" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>Breakfast on mornings off</p>
@@ -190,16 +208,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Temptation</h1>
 		        <h4>08:16</h4>
 		        <h4>1/320 sec|ISO 400|f/2.8</h4>
 		        <h4>Mount Fuji</h4>
       		</header>
-      		<div class="imgContent">
+      		-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories2.jpg" alt="shizuFish" style="max-width: 100%"></img>
+	    		<img src="./images/stories2.jpg" alt="shizuFish" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>"Avi! Get the coal hot. As hot as it goes then bring it to me through the back". I carried the scorching bucket of coal through the back door of the kitchen to find Shizu-san kneeling by his stool with a grill in one hand and a pair of chopsticks in the other. He slapped the grill onto the bucket, and started gently laying the salmon on the grill, one piece at a time. Half way through the plate he looked up, saw me staring right back at him, and yelled "Leave! But come back in 20 to heat the coal up again"</p>
@@ -207,16 +227,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Sorry, We are Closed</h1>
 		        <h4>17:41</h4>
 		        <h4>1/125 sec|ISO 400|f/2.8</h4>
 		        <h4>Mount Fuji</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories3.jpg" alt="jrPuff" style="max-width: 100%"></img>
+	    		<img src="./images/stories3.jpg" alt="jrPuff" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>We often don't realize how isolated we really are on the mountain until we close down the hut. You take away the flow of thousands of ambitious climbers a day and suddenly you're left with a cold, damp, confined, and eerily silent room.</p>
@@ -224,16 +246,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>あっち向いてホイ</h1>
 		        <h4>10:19</h4>
 		        <h4>1/60 sec|ISO 100|f/2.0</h4>
 		        <h4>Mount Fuji</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories8.jpg" alt="janken" style="max-width: 100%"></img>
+	    		<img src="./images/stories8.jpg" alt="janken" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>The little breaks you get throughout the day...something something</p>
@@ -241,16 +265,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Five more minutes</h1>
 		        <h4>05:40</h4>
 		        <h4>1/50 sec|ISO 400|f/2.0</h4>
 		        <h4>Mount Fuji</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories9.jpg" alt="janken" style="max-width: 100%"></img>
+	    		<img src="./images/stories9.jpg" alt="janken" style="max-width: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>Think of something</p>
@@ -258,16 +284,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Place your bets</h1>
 		        <h4>08:37</h4>
 		        <h4>1/50 sec|ISO 3200|f/2.8</h4>
 		        <h4>Mount Fuji</h4>
       		</header>
-      		<div class="imgContent">
+      		-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories10.jpg" alt="janken" style="max-width: 100%"></img>
+	    		<img src="./images/stories10.jpg" alt="janken" style="max-width:100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>Think of something pls</p>
@@ -275,16 +303,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Behind the scenes</h1>
 		        <h4>15:07</h4>
 		        <h4>1/2000 sec|ISO 320|f/2.8</h4>
 		        <h4>Kyoto</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories5.jpg" alt="gardener" style="max-width: 100%"></img>
+	    		<img src="./images/stories5.jpg" alt="gardener" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>The hidden faces that keep the streets clean and the gardens green</p>
@@ -292,16 +322,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Thank You Young People</h1>
 		        <h4>12:14</h4>
 		        <h4>1/1250 sec|ISO 200|f/4.5</h4>
 		        <h4>Toronto</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories6.jpg" alt="future" style="max-width: 100%"></img>
+	    		<img src="./images/stories6.jpg" alt="future" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>Thank you for being the generation that stands up for the earth</p>
@@ -309,16 +341,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Who's that masked man?</h1>
 		        <h4>15:34</h4>
 		        <h4>1/8000 sec|ISO 100|f/5.0</h4>
 		        <h4>Daisekkei</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories7.jpg" alt="mysterio" style="max-width: 100%"></img>
+	    		<img src="./images/stories7.jpg" alt="mysterio" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>The second I saw the people-looking figures emerging from the fog, I ran. Thank you, random climber, for one of the most chilling sights I have ever seen.</p>
@@ -326,16 +360,18 @@ body, html {
     	</div>
 
     	<div class="mySlides">
+    		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Please, after you</h1>
 		        <h4>06:32</h4>
 		        <h4>1/800 sec|ISO 100|f/6.3</h4>
 		        <h4>Daisekkei</h4>
       		</header>
-      		<div class="imgContent">
+      	-->
+      		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories4.jpg" alt="threeClimbers" style="max-width: 100%"></img>
+	    		<img src="./images/stories4.jpg" alt="threeClimbers" style="max-height: 100vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p>The steepness of this ice climb is a little hard to comprehend and portray. </p>
