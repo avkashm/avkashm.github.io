@@ -17,7 +17,7 @@ body, html {
 /* Parallax formatting*/
 
 .bgimg-1 {
-  background-image: url("./images/bgImg3.jpg");
+  background-image: url("./images/bgImg2.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -26,15 +26,69 @@ body, html {
   position: relative;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+	letter-spacing: 10px;
+}
+.w3-hover-opacity {
+	cursor: pointer;
+}
+
+.blurBG {
+	filter: blur(1.5px);
+	-webkit-filter: blur(1.5px);
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1 {
+.bgimg-1 {
     background-attachment: scroll;
     min-height: 400px;
   }
+}
+
+.w3-modal-content {
+	width: 60%;
+	background-color: transparent;
+	object-fit: contain;
+	overflow: hidden;
+}
+
+/* Previous/Next button config */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev:hover, .next:hover {
+  color: darkgrey;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+.mySlides{
+	height: 100%;
+}
+
+.imgContent {
+	height: 100%;
 }
 </style>
 <body>
@@ -65,7 +119,7 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Main Content ) -->
+<!-- Container (Blurb/writing content ) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <i><h3 class="w3-center">Landscapes something something</h3></i>
   <p> This blah blah blah Ryu Fuji blah blah blah</p>
@@ -73,106 +127,99 @@ body, html {
 
 
 <!-- Gallery with stories -->
-
 <div class="w3-content w3-container w3-padding-64 w3-center" id="gallery">
 
-	<div class="w3-row-padding w3-center">
-		<!--
-	    <div class="w3-col m3">
-	      <img src="./images/landscapes1pre.jpg" style="width:100%" onclick="document.getElementById('fujiNightSky').style.display='block'" class="w3-hover-opacity" alt="North Star">
-	      <p>City lights</p>
-	    </div>
-		-->
+	<div class="w3-row-padding w3-center w3-section">
 
-	    <div class="w3-col m3">
-	      <img src="./images/landscapes2pre.jpg" style="width:100%" onclick="openModal();" class="w3-hover-opacity" alt="Morning Rush">
-	      <p>Morning rush</p>
+	    <div class="w3-col m4">
+	      <img src="./images/landscapes1pre.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="w3-hover-opacity" alt="8/22">
+	      <p>8/22</p>
 	    </div>
 
-	    <div class="w3-col m3">
-	      <img src="./images/landscapes3pre.jpg" style="width:100%" onclick="document.getElementById('kitaWhite').style.display='block'" class="w3-hover-opacity" alt="A Ridge to Yourself">
-	      <p>Treading a fine line</p>
+	    <div class="w3-col m4">
+	      <img src="./images/landscapes2pre.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="w3-hover-opacity" alt="8/24">
+	      <p>8/24</p>
 	    </div>
 
-	    <div class="w3-col m3">
-	      <img src="./images/landscapes4pre.jpg" style="width:100%" onclick="document.getElementById('kitaTents').style.display='block'" class="w3-hover-opacity" alt="5-star Hotel">
-	      <p>5-star hotel</p>
+	    <div class="w3-col m4">
+	      <img src="./images/landscapes3pre.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="w3-hover-opacity" alt="8/25">
+	      <p>8/25</p>
 	    </div>
-  </div>
 
-  <!-- Image modal config-->
-
-  <!-- <div id="fujiNightSky" class="w3-modal">
-    <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
-        <span onclick="document.getElementById('fujiNightSky').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h1>City lights</h1>
-        <h4>23:43</h4>
-        <h4>20.0 sec|ISO 1000|f/2.8</h4>
-        <h4>Mount Fuji</h4>
-      </header>
-      <div class="w3-container">
-      	<img src="./images/landscapes1.jpg" alt="fujiNightSky" style="width:100%"></img>
-        <p>One night of the year that I actually got to see the stars</p>
-      </div>
-    </div>
-  </div> -->
-
-  <div id="fujiNightClimbers" class="myModal w3-modal">
-    <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
-        <span onclick="document.getElementById('fujiNightClimbers').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h1>Morning rush</h1>
-        <h4>03:24</h4>
-        <h4>2.0 sec|ISO 800|f/3.5</h4>
-        <h4>Mount Fuji</h4>
-      </header>
-      <div class="w3-container">
-      	<img src="./images/landscapes2.jpg" alt="fujiNightClimbers" style="width:100%"></img>
-        <p>It's a bazzare experience to have, but an even more bazzare sight to see from above. Every</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="kitaWhite" class="myModal w3-modal">
-    <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
-        <span onclick="document.getElementById('kitaWhite').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h1>Treading a fine line</h1>
-        <h4>10:57</h4>
-        <h4>1/8000 sec|ISO 100|f/2.8</h4>
-        <h4>Shirouma-Dake</h4>
-      </header>
-      <div class="w3-container">
-      	<img src="./images/landscapes3.jpg" alt="kitaWhite" style="width:100%"></img>
-        <p>This ridge is a trail-running paradise</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="kitaTents" class="myModal w3-modal">
-    <div class="w3-modal-content w3-animate-opacity">
-      <header class="w3-container w3-lightgrey"> 
-        <span onclick="document.getElementById('kitaTents').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h1>5-star hotel</h1>
-        <h4>06:49</h4>
-        <h4>1/3200 sec|ISO 100|f/3.5</h4>
-        <h4>Kita-Dake</h4>
-      </header>
-      <div class="w3-container">
-      	<img src="./images/landscapes4.jpg" alt="kitaTents" style="width:100%"></img>
-        <p>Not too bad of a view</p>
-      </div>
-    </div>
-  </div>
+	</div>
 
 </div>
 
-<!-- Footer -->
+						<!-- Image Modal Configuration and Content -->
+
+<div id="myModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+    	<div class="mySlides">
+    		<!--
+    		<header class="w3-container w3-darkgrey w3-center">
+    		 
+		        <h1>Fire up the grill</h1>
+		        <h4> 06:31</h4>
+		        <h4>1/100 sec|ISO 400|f/3.5</h4>
+		        <h4>Mount Fuji</h4>
+		    
+	      	</header>
+	      	-->
+	      	<div class="imgContent w3-center">
+		      	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    		<img src="./images/landscapes1.jpg" alt="8/22" style="max-width: 90vh"></img>
+	    	</div>
+	    	<footer>
+	    		<p>8/22</p>
+	    	</footer>
+    	</div>
+
+    	<div class="mySlides">
+    		<!--
+    		<header class="w3-container w3-darkgrey w3-center"> 
+		        <h1>Temptation</h1>
+		        <h4>08:16</h4>
+		        <h4>1/320 sec|ISO 400|f/2.8</h4>
+		        <h4>Mount Fuji</h4>
+      		</header>
+      		-->
+      		<div class="imgContent w3-center">
+	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    		<img src="./images/landscapes2.jpg" alt="8/24" style="max-width: 90vh"></img>
+	    	</div>
+	    	<footer>
+	    		<p>8/24</p>
+	    	</footer>
+    	</div>
+
+    	<div class="mySlides">
+    		<!--
+    		<header class="w3-container w3-darkgrey w3-center"> 
+		        <h1>Sorry, We are Closed</h1>
+		        <h4>17:41</h4>
+		        <h4>1/125 sec|ISO 400|f/2.8</h4>
+		        <h4>Mount Fuji</h4>
+      		</header>
+      	-->
+      		<div class="imgContent w3-center">
+	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    		<img src="./images/landscapes3.jpg" alt="8/25" style="max-width: 90vh"></img>
+	    	</div>
+	    	<footer>
+	    		<p>8/25</p>
+	    	</footer>
+    	</div>
+
+    </div>
+</div>
+
+
+											<!-- Footer -->
+
+
 <footer class="w3-center w3-black w3-opacity w3-hover-opacity-off">
   <div class="w3-xlarge w3-section">
     <a target="_blank" href="mailto:avkashmukhi@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
@@ -182,31 +229,57 @@ body, html {
 </footer>
  
 <script>
+// Get the modal
+var modalClick = document.getElementById('myModal');
+var blurGallery = document.getElementById('gallery');
+var blurAbout = document.getElementById('about');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalClick) {
+    closeModal();
+  }
+}
 
 function openModal() {
-  document.getElementsByClassName("myModal").style.display = "block";
+  document.getElementById("myModal").style.display = "block";
+  blurGallery.className = "w3-content w3-container w3-padding-64 w3-center blurBG"
+  blurAbout.className = "w3-content w3-container w3-padding-64 blurBG"
 }
 
 function closeModal() {
-  document.getElementsByClassName("myModal").style.display = "none";
+  document.getElementById("myModal").style.display = "none";
+  blurGallery.className = "w3-content w3-container w3-padding-64 w3-center"
+  blurAbout.className = "w3-content w3-container w3-padding-64"
 }
 
 var slideIndex = 1;
-showDivs(slideIndex);
+showSlides(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function showDivs(n) {
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 // Change style of navbar on scroll
