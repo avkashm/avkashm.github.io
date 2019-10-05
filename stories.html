@@ -42,6 +42,35 @@ body, html {
 	height: 100%;
 }
 
+.textOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+.captionText {
+  color: lightgrey;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thumbnail:hover .textOverlay {
+  opacity: 1;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
 .bgimg-1 {
@@ -101,6 +130,7 @@ body, html {
     <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
     <a href="/stories.html" class="w3-bar-item w3-button w3-hide-small"><i></i> STORIES</a>
     <a href="/landscapes.html" class="w3-bar-item w3-button w3-hide-small"><i></i>LANDSCAPES</a>
+    <a href="/portraits.html" class="w3-bar-item w3-button w3-hide-small"><i></i>PORTRAITS</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -108,6 +138,7 @@ body, html {
     <a href="/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
     <a href="/stories.html" class="w3-bar-item w3-button" onclick="toggleFunction()">STORIES</a>
     <a href="/landscapes.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LANDSCAPES</a>
+    <a href="/portraits.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTRAITS</a>
   </div>
 </div>
 
@@ -132,22 +163,18 @@ body, html {
 
 	    <div class="w3-col m3">
 	      <img src="./images/stories1pre.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="w3-hover-opacity" alt="Fire up the Grill">
-	      <p>Fire up the grill</p>
 	    </div>
 
 	    <div class="w3-col m3">
 	      <img src="./images/stories2pre.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="w3-hover-opacity" alt="Mouth-Watering">
-	      <p>Temptation</p>
 	    </div>
 
 	    <div class="w3-col m3">
 	      <img src="./images/stories3pre.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="w3-hover-opacity" alt="Sorry, We are Closed">
-	      <p>Sorry, We are Closed</p>
 	    </div>
 
 	    <div class="w3-col m3">
 	      <img src="./images/stories8pre.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="w3-hover-opacity" alt="Say Cheese">
-	      <p>あっち向いてホイ</p>
 	    </div>
 
 	</div>
@@ -156,12 +183,10 @@ body, html {
 
 		<div class="w3-col m6">
 	      <img src="./images/stories9pre.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="w3-hover-opacity" alt="5 more minutes">
-	      <p>Five more minutes</p>
 	    </div>
 
 	    <div class="w3-col m6">
 	      <img src="./images/stories10pre.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="w3-hover-opacity" alt="strategy">
-	      <p>Place your bets</p>
 	    </div>
 
 	</div>
@@ -170,22 +195,18 @@ body, html {
 
 	  	<div class="w3-col m3">
 		  <img src="./images/stories5pre.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="w3-hover-opacity" alt="Behind the scenes">
-		  <p>Behind the scenes</p>
 		</div>
 
 		<div class="w3-col m3">
 		  <img src="./images/stories6pre.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="w3-hover-opacity" alt="Thank You Young People">
-		  <p>Thank You Young People</p>
 		</div>
 
 		<div class="w3-col m3">
 	      <img src="./images/stories7pre.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="w3-hover-opacity" alt="Mysterio">
-	      <p>Who's that masked man?</p>
 	    </div>
 
 	    <div class="w3-col m3">
 	      <img src="./images/stories4pre.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="w3-hover-opacity" alt="Lead the Way">
-	      <p>Please, after you</p>
 	    </div>
 
 	</div>
