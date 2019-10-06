@@ -38,6 +38,9 @@ body, html {
 	-webkit-filter: blur(3px);
 }
 
+.imgContent {
+	height: 100%;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -48,8 +51,9 @@ body, html {
 }
 
 .w3-modal-content {
-	width: 60%;
+	width: 90%;
 	background-color: transparent;
+	opacity: 1;
 	object-fit: contain;
 	overflow: hidden;
 }
@@ -65,7 +69,7 @@ body, html {
   color: lightgrey;
   font-weight: bold;
   font-size: 35px;
-  transition: 0.6s ease;
+  transition: 0.3s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -83,11 +87,11 @@ body, html {
 	right: 0;
 }
 
-.mySlides{
-	height: 100%;
+.closeModalButton {
+	color: lightgrey;
 }
 
-.imgContent {
+.mySlides{
 	height: 100%;
 }
 </style>
@@ -172,7 +176,8 @@ body, html {
 
 <div id="myModal" class="w3-modal w3-padding-32">
     <div class="w3-modal-content w3-animate-opacity">
-    	<div class="mySlides w3-padding-64">
+    	<span onclick= "closeModal()" class="closeModalButton w3-button w3-display-topright w3-xxlarge">x</span>
+    	<div class="mySlides w3-padding-32">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center">
     		 
@@ -186,14 +191,14 @@ body, html {
 	      	<div class="imgContent w3-center">
 		      	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes1.jpg" alt="8/22" style="max-width: 110vh"></img>
+	    		<img src="./images/landscapes1.jpg" alt="8/22" style="max-height: 80vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p></p>
 	    	</footer>
     	</div>
 
-    	<div class="mySlides w3-padding-64">
+    	<div class="mySlides w3-padding-32">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Temptation</h1>
@@ -205,14 +210,14 @@ body, html {
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes2.jpg" alt="8/24" style="max-width: 110vh"></img>
+	    		<img src="./images/landscapes2.jpg" alt="8/24" style="max-height: 80vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p></p>
 	    	</footer>
     	</div>
 
-    	<div class="mySlides w3-padding-64">
+    	<div class="mySlides w3-padding-32">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Sorry, We are Closed</h1>
@@ -224,7 +229,7 @@ body, html {
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes3.jpg" alt="8/25" style="max-width: 110vh"></img>
+	    		<img src="./images/landscapes3.jpg" alt="8/25" style="max-height: 80vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p></p>
@@ -250,7 +255,7 @@ body, html {
 	    	</footer>
     	</div>
 
-    	<div class="mySlides w3-padding-64">
+    	<div class="mySlides w3-padding-32">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Sorry, We are Closed</h1>
@@ -262,7 +267,7 @@ body, html {
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes5.jpg" alt="8/25" style="max-width: 110vh"></img>
+	    		<img src="./images/landscapes5.jpg" alt="8/25" style="max-height: 80vh"></img>
 	    	</div>
 	    	<footer>
 	    		<p></p>
@@ -308,6 +313,7 @@ body, html {
 var modalClick = document.getElementById('myModal');
 var blurGallery = document.getElementById('gallery');
 var blurAbout = document.getElementById('about');
+var blurNavbar = document.getElementById('myNavbar');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -320,12 +326,14 @@ function openModal() {
   document.getElementById("myModal").style.display = "block";
   blurGallery.className = "w3-content w3-container w3-padding-64 w3-center blurBG"
   blurAbout.className = "w3-content w3-container w3-padding-64 blurBG"
+  blurNavbar.className = "w3-bar blurBG"
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
   blurGallery.className = "w3-content w3-container w3-padding-64 w3-center"
   blurAbout.className = "w3-content w3-container w3-padding-64"
+  blurNavbar.className = "w3-bar"
 }
 
 var slideIndex = 1;

@@ -42,35 +42,6 @@ body, html {
 	height: 100%;
 }
 
-.textOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  transition: .5s ease;
-  background-color: transparent;
-}
-
-.captionText {
-  color: lightgrey;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.thumbnail:hover .textOverlay {
-  opacity: 1;
-}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
 .bgimg-1 {
@@ -80,8 +51,9 @@ body, html {
 }
 
 .w3-modal-content {
-	width: 60%;
+	width: 90%;
 	background-color: transparent;
+	opacity: 1;
 	object-fit: contain;
 	overflow: hidden;
 }
@@ -97,7 +69,7 @@ body, html {
   color: lightgrey;
   font-weight: bold;
   font-size: 35px;
-  transition: 0.6s ease;
+  transition: 0.3s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -115,6 +87,10 @@ body, html {
 	right: 0;
 }
 
+.closeModalButton {
+	color: lightgrey;
+}
+
 .mySlides{
 	height: 100%;
 }
@@ -128,9 +104,9 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="/stories.html" class="w3-bar-item w3-button w3-hide-small"><i></i> STORIES</a>
-    <a href="/landscapes.html" class="w3-bar-item w3-button w3-hide-small"><i></i>LANDSCAPES</a>
-    <a href="/people.html" class="w3-bar-item w3-button w3-hide-small"><i></i>PEOPLE</a>
+    <a href="/stories.html" class="w3-bar-item w3-button w3-hide-small">STORIES</a>
+    <a href="/landscapes.html" class="w3-bar-item w3-button w3-hide-small">LANDSCAPES</a>
+    <a href="/people.html" class="w3-bar-item w3-button w3-hide-small">PEOPLE</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -218,6 +194,7 @@ body, html {
 
 <div id="myModal" class="w3-modal w3-padding-32">
     <div class="w3-modal-content w3-animate-opacity">
+    	<span onclick= "closeModal()" class="closeModalButton w3-button w3-display-topright w3-xxlarge">x</span>
     	<div class="mySlides">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center">
@@ -234,9 +211,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories1.jpg" alt="breadGrill" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>Breakfast on mornings off</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -253,9 +227,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories2.jpg" alt="shizuFish" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>"Avi! Get the coal hot. As hot as it goes then bring it to me through the back". I carried the scorching bucket of coal through the back door of the kitchen to find Shizu-san kneeling by his stool with a grill in one hand and a pair of chopsticks in the other. He slapped the grill onto the bucket, and started gently laying the salmon on the grill, one piece at a time. Half way through the plate he looked up, saw me staring right back at him, and yelled "Leave! But come back in 20 to heat the coal up again"</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -272,9 +243,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories3.jpg" alt="jrPuff" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>We often don't realize how isolated we really are on the mountain until we close down the hut. You take away the flow of thousands of ambitious climbers a day and suddenly you're left with a cold, damp, confined, and eerily silent room.</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -291,12 +259,9 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories8.jpg" alt="janken" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>The little breaks you get throughout the day...something something</p>
-	    	</footer>
     	</div>
 
-    	<div class="mySlides w3-padding-64">
+    	<div class="mySlides w3-padding-32">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Five more minutes</h1>
@@ -308,14 +273,11 @@ body, html {
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories9.jpg" alt="sleepy" style="max-width: 110vh"></img>
+	    		<img src="./images/stories9.jpg" alt="sleepy" style="max-height: 80vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>Think of something</p>
-	    	</footer>
     	</div>
 
-    	<div class="mySlides w3-padding-64">
+    	<div class="mySlides w3-padding-32">
     		<!--
     		<header class="w3-container w3-darkgrey w3-center"> 
 		        <h1>Place your bets</h1>
@@ -327,12 +289,8 @@ body, html {
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/stories10.jpg" alt="mahjong" style="max-width: 110vh"></img>
+	    		<img src="./images/stories10.jpg" alt="mahjong" style="max-height: 80vh"></img>
 	    	</div>
-
-	    	<footer>
-	    		<p>Think of something pls</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -349,9 +307,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories5.jpg" alt="gardener" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>The hidden faces that keep the streets clean and the gardens green</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -368,9 +323,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories6.jpg" alt="future" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>Thank you for being the generation that stands up for the earth</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -387,9 +339,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories7.jpg" alt="mysterio" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>The second I saw the people-looking figures emerging from the fog, I ran. Thank you, random climber, for one of the most chilling sights I have ever seen.</p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
@@ -406,9 +355,6 @@ body, html {
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/stories4.jpg" alt="threeClimbers" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p>The steepness of this ice climb is a little hard to comprehend and portray. </p>
-	    	</footer>
     	</div>
 
     </div>
@@ -431,6 +377,7 @@ body, html {
 var modalClick = document.getElementById('myModal');
 var blurGallery = document.getElementById('gallery');
 var blurAbout = document.getElementById('about');
+var blurNavbar = document.getElementById('myNavbar');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -443,12 +390,14 @@ function openModal() {
   document.getElementById("myModal").style.display = "block";
   blurGallery.className = "w3-content w3-container w3-padding-64 w3-center blurBG"
   blurAbout.className = "w3-content w3-container w3-padding-64 blurBG"
+  blurNavbar.className = "w3-bar blurBG"
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
   blurGallery.className = "w3-content w3-container w3-padding-64 w3-center"
   blurAbout.className = "w3-content w3-container w3-padding-64"
+  blurNavbar.className = "w3-bar"
 }
 
 var slideIndex = 1;
@@ -466,7 +415,6 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -477,7 +425,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 // Change style of navbar on scroll
