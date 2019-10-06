@@ -138,16 +138,24 @@ body, html {
 	<h3>Mount Fuji</h3>
 	<div class="w3-row-padding w3-center w3-section">
 
-	    <div class="w3-col m4">
+	    <div class="w3-col m6">
 	      <img src="./images/landscapes1pre.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="w3-hover-opacity" alt="8/22">
 	    </div>
 
-	    <div class="w3-col m4">
+	    <div class="w3-col m6">
 	      <img src="./images/landscapes2pre.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="w3-hover-opacity" alt="8/24">
 	    </div>
 
-	    <div class="w3-col m4">
+	</div>
+
+	<div class="w3-row-padding w3-center w3-section">
+
+		<div class="w3-col m6">
 	      <img src="./images/landscapes3pre.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="w3-hover-opacity" alt="8/25">
+	    </div>
+
+	    <div class="w3-col m6">
+	      <img src="./images/landscapes4pre.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="w3-hover-opacity" alt="lastjune">
 	    </div>
 
 	</div>
@@ -156,15 +164,15 @@ body, html {
 	<div class="w3-row-padding w3-center w3-section">
 
 	    <div class="w3-col m3">
-	      <img src="./images/landscapes4pre.jpg" style="width:92%" onclick="openModal();currentSlide(4)" class="w3-hover-opacity" alt="8/22">
+	      <img src="./images/landscapes5pre.jpg" style="width:92%" onclick="openModal();currentSlide(5)" class="w3-hover-opacity" alt="8/22">
 	    </div>
 
 	    <div class="w3-col m6">
-	      <img src="./images/landscapes5pre.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="w3-hover-opacity" alt="8/24">
+	      <img src="./images/landscapes6pre.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="w3-hover-opacity" alt="8/24">
 	    </div>
 
 	    <div class="w3-col m3">
-	      <img src="./images/landscapes6pre.jpg" style="width:92%" onclick="openModal();currentSlide(6)" class="w3-hover-opacity" alt="8/25">
+	      <img src="./images/landscapes7pre.jpg" style="width:92%" onclick="openModal();currentSlide(7)" class="w3-hover-opacity" alt="8/25">
 	    </div>
 
 	</div>
@@ -177,120 +185,61 @@ body, html {
 <div id="myModal" class="w3-modal w3-padding-32">
     <div class="w3-modal-content w3-animate-opacity">
     	<span onclick= "closeModal()" class="closeModalButton w3-button w3-display-topright w3-xxlarge">x</span>
+
     	<div class="mySlides w3-padding-32">
-    		<!--
-    		<header class="w3-container w3-darkgrey w3-center">
-    		 
-		        <h1>Fire up the grill</h1>
-		        <h4> 06:31</h4>
-		        <h4>1/100 sec|ISO 400|f/3.5</h4>
-		        <h4>Mount Fuji</h4>
-		    
-	      	</header>
-	      	-->
 	      	<div class="imgContent w3-center">
 		      	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/landscapes1.jpg" alt="8/22" style="max-height: 80vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p></p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides w3-padding-32">
-    		<!--
-    		<header class="w3-container w3-darkgrey w3-center"> 
-		        <h1>Temptation</h1>
-		        <h4>08:16</h4>
-		        <h4>1/320 sec|ISO 400|f/2.8</h4>
-		        <h4>Mount Fuji</h4>
-      		</header>
-      		-->
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/landscapes2.jpg" alt="8/24" style="max-height: 80vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p></p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides w3-padding-32">
-    		<!--
-    		<header class="w3-container w3-darkgrey w3-center"> 
-		        <h1>Sorry, We are Closed</h1>
-		        <h4>17:41</h4>
-		        <h4>1/125 sec|ISO 400|f/2.8</h4>
-		        <h4>Mount Fuji</h4>
-      		</header>
-      	-->
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	    		<img src="./images/landscapes3.jpg" alt="8/25" style="max-height: 80vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p></p>
-	    	</footer>
-    	</div>
-
-    	<div class="mySlides">
-    		<!--
-    		<header class="w3-container w3-darkgrey w3-center"> 
-		        <h1>Sorry, We are Closed</h1>
-		        <h4>17:41</h4>
-		        <h4>1/125 sec|ISO 400|f/2.8</h4>
-		        <h4>Mount Fuji</h4>
-      		</header>
-      	-->
-      		<div class="imgContent w3-center">
-	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes4.jpg" alt="8/25" style="max-height: 90vh"></img>
-	    	</div>
-	    	<footer>
-	    		<p></p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides w3-padding-32">
-    		<!--
-    		<header class="w3-container w3-darkgrey w3-center"> 
-		        <h1>Sorry, We are Closed</h1>
-		        <h4>17:41</h4>
-		        <h4>1/125 sec|ISO 400|f/2.8</h4>
-		        <h4>Mount Fuji</h4>
-      		</header>
-      	-->
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes5.jpg" alt="8/25" style="max-height: 80vh"></img>
+	    		<img src="./images/landscapes4.jpg" alt="last june" style="max-height: 80vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p></p>
-	    	</footer>
     	</div>
 
     	<div class="mySlides">
-    		<!--
-    		<header class="w3-container w3-darkgrey w3-center"> 
-		        <h1>Sorry, We are Closed</h1>
-		        <h4>17:41</h4>
-		        <h4>1/125 sec|ISO 400|f/2.8</h4>
-		        <h4>Mount Fuji</h4>
-      		</header>
-      	-->
       		<div class="imgContent w3-center">
 	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    		<img src="./images/landscapes6.jpg" alt="8/25" style="max-height: 90vh"></img>
+	    		<img src="./images/landscapes5.jpg" alt="8/25" style="max-height: 90vh"></img>
 	    	</div>
-	    	<footer>
-	    		<p></p>
-	    	</footer>
+    	</div>
+
+    	<div class="mySlides w3-padding-32">
+      		<div class="imgContent w3-center">
+	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    		<img src="./images/landscapes6.jpg" alt="8/25" style="max-height: 80vh"></img>
+	    	</div>
+    	</div>
+
+    	<div class="mySlides">
+      		<div class="imgContent w3-center">
+	      		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    		<img src="./images/landscapes7.jpg" alt="8/25" style="max-height: 90vh"></img>
+	    	</div>
     	</div>
 
     </div>
