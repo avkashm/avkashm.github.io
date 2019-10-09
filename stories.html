@@ -118,7 +118,7 @@ body, html {
     <a href="/about.html" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
     <div class="w3-dropdown-hover">
       <button class="w3-button">PHOTOGRAPHY</button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <div class="w3-dropdown-content w3-bar-block w3-card-4"  id="navbarDropdown">
         <a href="/stories.html" class="w3-bar-item w3-button w3-hide-small">STORIES</a>
         <a href="/landscapes.html" class="w3-bar-item w3-button w3-hide-small">LANDSCAPES</a>
         <a href="/people.html" class="w3-bar-item w3-button w3-hide-small">PEOPLE</a>
@@ -228,7 +228,7 @@ body, html {
 						<!-- Horizontal pics (landscape) have w3-padding-64 in mySlides-->
 
 <div id="myModal" class="w3-modal w3-padding-32">
-    <div class="w3-modal-content w3-animate-opacity">
+    <div id="SHEKHAR" class="w3-modal-content w3-animate-opacity">
     	<span onclick= "closeModal()" class="closeModalButton w3-button w3-display-topright w3-xxlarge">x</span>
     	<div class="mySlides">
     		<!--
@@ -242,8 +242,8 @@ body, html {
 	      	</header>
 	      	-->
 	      	<div class="imgContent w3-center">
-		      	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		      	<a class="prev" onclick="plusSlides(-1)"">&#10094;</a>
+	    		<a class="next" onclick="plusSlides(1)"">&#10095;</a>
 	    		<img src="./images/stories1.jpg" alt="breadGrill" style="max-height: 90vh"></img>
 	    	</div>
 
@@ -459,6 +459,22 @@ window.onclick = function(event) {
   }
 }
 
+$("#SHEKHAR").keydown(function(e){
+    if (e.keyCode == 37) { 
+       alert( "left pressed" );
+       return false;
+    }else  if (e.keyCode == 39) { 
+       alert( "right key pressed" );
+         return false;
+    }else  if (e.keyCode == 38) { 
+       alert( "Up key pressed" );
+         return false;
+    }else  if (e.keyCode == 40) { 
+       alert( "Down key pressed" );
+         return false;
+    }
+});
+
 // Open modal and blur background, gallery, and navbar
 function openModal() {
   document.getElementById("myModal").style.display = "block";
@@ -516,10 +532,14 @@ function showSlides(n) {
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
+    var navbardropdown = document.getElementById("navbarDropdown");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top";
+        navbardropdown.className = "w3-dropdown-content w3-bar-block w3-card-4" + " w3-animate-top";
+        
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top", "");
+        navbardropdown.className = navbardropdown.className.replace(" w3-animate-top", "");
     }
 }
 

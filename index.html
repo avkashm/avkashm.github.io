@@ -164,12 +164,12 @@ function myFunction() {
     var navbar = document.getElementById("myNavbar");
     var navbardropdown = document.getElementById("navbarDropdown");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        //navbardropdown.className = "w3-dropdown-content w3-bar-block w3-card-4" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top";
+        navbardropdown.className = "w3-dropdown-content w3-bar-block w3-card-4" + " w3-animate-top";
         
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        //navbarDropdown.className = navbar.className.replace(" w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top", "");
+        navbardropdown.className = navbardropdown.className.replace(" w3-animate-top", "");
     }
 }
 
