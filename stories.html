@@ -228,7 +228,7 @@ body, html {
 						<!-- Horizontal pics (landscape) have w3-padding-64 in mySlides-->
 
 <div id="myModal" class="w3-modal w3-padding-32">
-    <div id="SHEKHAR" class="w3-modal-content w3-animate-opacity">
+    <div class="w3-modal-content w3-animate-opacity">
     	<span onclick= "closeModal()" class="closeModalButton w3-button w3-display-topright w3-xxlarge">x</span>
     	<div class="mySlides">
     		<!--
@@ -458,22 +458,6 @@ window.onclick = function(event) {
     hideDescription();
   }
 }
-
-$("#SHEKHAR").keydown(function(e){
-    if (e.keyCode == 37) { 
-       alert( "left pressed" );
-       return false;
-    }else  if (e.keyCode == 39) { 
-       alert( "right key pressed" );
-         return false;
-    }else  if (e.keyCode == 38) { 
-       alert( "Up key pressed" );
-         return false;
-    }else  if (e.keyCode == 40) { 
-       alert( "Down key pressed" );
-         return false;
-    }
-});
 
 // Open modal and blur background, gallery, and navbar
 function openModal() {
