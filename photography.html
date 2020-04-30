@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>Avkash Mukhi - Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+h1 {font-size: 64px}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  color: black;
+}
+
+/* Parallax formatting*/
+.bgimg {
+  background-image: url("./images/backgrounds/photography.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE 10 */
+  flex: 33%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.container {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.btn {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+</style>
+
+<head>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <h1 style="color:white; text-align: center">Gallery</h1>
+    <p style="color:white; text-align: center"><i>"Don't just capture the moment; Tell me a story"</i></p>
+  </div>
+</div>
+
+<!-- Navbar --> 
+<div id="navbar">
+  <a href="/cooking.html">Cooking</a>
+  <a href="/writing.html">Writing</a>
+  <a href="/about.html">About</a>
+  <a href="/index.html">Home</a>
+</div>
+
+<!-- Header -->
+<!-- <div class="w3-display-container">
+  <button class="btn active" onclick="all()">View All</button>
+  <button class="btn" onclick="people()">People</button>
+  <button class="btn" onclick="places()">Places</button>
+</div>
+ -->
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <div class="container">
+      <img src="./images/gallery/kyotolady.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/kamiPre.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/kyotogarden.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/mahjongPre.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="./images/gallery/higherbeingPre.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/shizu.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/sleepingshinPre.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/breakfast.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="./images/gallery/climb.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/climateprotest.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/headlampsPre.jpg" style="width:100%">
+    </div>
+    <div class="container">
+      <img src="./images/gallery/janken.jpg" style="width:100%">
+    </div>
+  </div>
+
+</div>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+
+</body>
+</html>
