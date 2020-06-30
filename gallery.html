@@ -154,13 +154,13 @@ body.modal-open {
     <img src="./images/gallery/kyotoladyPre.jpg" style="width:100%">
     <!-- ISO-200|1/2500 sec|f/3.2 -->
 
-    <img src="./images/gallery/kamiPre.jpg" style="width:100%" data-toggle="modal" data-target="#exampleModalHorizontal">
+    <img src="./images/gallery/kamiPre.jpg" style="width:100%" data-toggle="modal" data-target="#kamiHorizontal">
     <!-- ISO-100|1/1000 sec|f/2.8 -->
 
     <img src="./images/gallery/kyotogardenPre.jpg" style="width:100%">
     <!-- ISO-320|1/2000 sec|f/2.8 -->
 
-    <img src="./images/gallery/mahjongPre.jpg" style="width:100%">
+    <img src="./images/gallery/mahjongPre.jpg" style="width:100%" data-toggle="modal" data-target="#mahjongHorizontal">
     <!-- ISO-3200|1/50 sec|f/2.8 -->
 
     <img src="./images/gallery/danielPre.jpg" style="width:100%">
@@ -170,13 +170,13 @@ body.modal-open {
 
   <div class="column">
 
-    <img src="./images/gallery/higherbeingPre.jpg" style="width:100%">
+    <img src="./images/gallery/higherbeingPre.jpg" style="width:100%" data-toggle="modal" data-target="#higherbeingHorizontal">
     <!-- ISO-100|1/500 sec|f/3.5 -->
 
     <img src="./images/gallery/shizuPre.jpg" style="width:100%">
     <!-- ISO-400|1/320 sec|f/2.8 -->
 
-    <img src="./images/gallery/sleepingshinPre.jpg" style="width:100%">
+    <img src="./images/gallery/sleepingshinPre.jpg" style="width:100%" data-toggle="modal" data-target="#sleepingshinHorizontal">
     <!-- ISO-400|1/50 sec|f/2.8 -->
 
     <img src="./images/gallery/breakfastPre.jpg" style="width:100%">
@@ -189,19 +189,20 @@ body.modal-open {
 
   <div class="column">
 
-    <img src="./images/gallery/climbPre.jpg" style="width:100%" data-toggle="modal" data-target="#exampleModalVertical">
+    <img src="./images/gallery/climbPre.jpg" style="width:100%" data-toggle="modal" data-target="#climbVertical">
     <!-- ISO-100|1/800 sec|f/6.3 -->
+    <!-- INCORRECT DATA-TARGET SHOULD BE EXAMPLEMODALVERTICAL -->
 
     <img src="./images/gallery/climateprotestPre.jpg" style="width:100%">
     <!-- ISO-200|1/1250 sec|f/4.5 -->
 
-    <img src="./images/gallery/headlampsPre.jpg" style="width:100%">
+    <img src="./images/gallery/headlampsPre.jpg" style="width:100%" data-toggle="modal" data-target="#headlampsHorizontal">
     <!-- ISO-800|2 sec|f/3.5 -->
 
     <img src="./images/gallery/hiddenPre.jpg" style="width:100%">
     <!-- ISO-100|1/8000 sec|f/5.0 -->
 
-    <img src="./images/gallery/shiroumaPre.jpg" style="width:100%">
+    <img src="./images/gallery/shiroumaPre.jpg" style="width:100%" data-toggle="modal" data-target="#shiroumaHorizontal">
     <!-- ISO-100|1/8000 sec|f/2.8 -->
     
   </div>
@@ -209,8 +210,8 @@ body.modal-open {
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- Horizontal Modals -->
+<div class="modal fade" id="kamiHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -219,10 +220,11 @@ body.modal-open {
             <div class="col-8 w3-center">
               <img src="./images/gallery/kami.jpg" style="width: 100%">
             </div>
-            <div class="col-4 w3-center">
-              <h3 class="photoCaption">Kami</h3>
+            <div class="col-4 w3-center" style="padding: 12px">
+              <h3 class="photoCaption">Kami (神)</h3>
               <h5 class="photoCaption"><i>ISO 100 | 1/1000 sec | f/2.8</i></h5> 
-              <p class="photoCaption">Jin could not have chosen to smoke in a more badass place as this cumulo nimbus cloud erupted over Western Tokyo before sunset</p>
+              <p class="photoCaption">There was an undeniable sense of panic and awe as this cumulonimbus cloud erupted over Western Tokyo before sunset. The handful of people left on the summit, mostly hut staff, quickly ran to grab their cameras and sketchpads, eager to capture the rare spectacle.</p> 
+              <p class="photoCaption">Jin emerged silently out of the kitchen, wandering over to the observation deck while pulling out a cigarette and lighter. She sat, almost perfectly still, staring into the cloud, puffing its crown with the smoke she so gently exhaled</p>
             </div>
           </div>
         </div>
@@ -231,7 +233,116 @@ body.modal-open {
   </div>
 </div>
 
-<!-- Modal -->
+<div class="modal fade" id="mahjongHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column">
+          <div class="row">
+            <div class="col-8 w3-center">
+              <img src="./images/gallery/mahjong.jpg" style="width: 100%">
+            </div>
+            <div class="col-4 w3-center" style="padding: 12px">
+              <h3 class="photoCaption">Your Move</h3>
+              <h5 class="photoCaption"><i>ISO 3200 | 1/50 sec | f/2.8</i></h5> 
+              <p class="photoCaption">Within minutes of recieving a typhoon warning on August 22nd, the windows and walls were boarded up. We tied down the water tanks, and switched our generators to run on their lowest mode. This typhoon wasn't forecasted to pass directly over us, but better be safe than sorry.</p>
+              <p class="photoCaption">Huddled around the one remaining bucket of burning coal, Shizu-san slowly raised his head, cracked his back, and said "Saa, shall we?", signalling the start of a decades long tradition of playing Mahjong to pass time, as the typhoon rattled the corrugated steel roof panels above our heads</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="higherbeingHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column">
+          <div class="row">
+            <div class="col-8 w3-center">
+              <img src="./images/gallery/higherbeing.jpg" style="width: 100%">
+            </div>
+            <div class="col-4 w3-center" style="padding: 12px">
+              <h3 class="photoCaption">"Banzai!"</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/500 sec | f/3.5</i></h5>
+              <p class="photoCaption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sleepingshinHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column">
+          <div class="row">
+            <div class="col-8 w3-center">
+              <img src="./images/gallery/sleepingshin.jpg" style="width: 100%">
+            </div>
+            <div class="col-4 w3-center" style="padding: 12px">
+              <h3 class="photoCaption">A Moment of Bliss</h3>
+              <h5 class="photoCaption"><i>ISO 400 | 1/50 sec | f/2.8</i></h5>
+              <p class="photoCaption">As the climbers outside celebrated reaching the summit in time for sunrise, Shin-sensei let out another deep breath. After a grueling 16-hour workday, he managed to pushed aside the cardboard boxes and plastic bags scattered across the bench, giving himself just enough space to unfold his futon before passing out</p>
+              <p class="photoCaption">We were two days away from closing up the hut for the season. There was still a mountain of work to be done before we could bolt up our doors and head down, but for now, we could rest. The climbers outside would have to get their bowl of steaming ramen somewhere else. Shin-sensei wasn't getting up any time soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="headlampsHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column">
+          <div class="row">
+            <div class="col-8 w3-center">
+              <img src="./images/gallery/headlamps.jpg" style="width: 100%">
+            </div>
+            <div class="col-4 w3-center" style="padding: 12px">
+              <h3 class="photoCaption">Morning Rush</h3>
+              <h5 class="photoCaption"><i>ISO 800 | 2.0 sec | f/3.5</i></h5>
+              <p class="photoCaption">The phone rang at 3:13am, informing us that a 28-person tour from Taishikan would be arriving at the summit within the hour. Shachō rolled out of his futon, and yelled through his window that we had 20 minutes to get the hut up and running for the day. Sundays were always busy, but I could sense this morning would be something esle.</p>
+              <p class="photoCaption">I threw on my sweatpants and grabbed my camera as I hastily stumbled out of the hut to see what we were up against for the day. Thousands of headlamps silently slithered there way up an invisible mountain, as the yellow hue of Tokyo lit the sky all the way into the horizon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="shiroumaHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column">
+          <div class="row">
+            <div class="col-8 w3-center">
+              <img src="./images/gallery/shirouma.jpg" style="width: 100%">
+            </div>
+            <div class="col-4 w3-center" style="padding: 12px">
+              <h3 class="photoCaption">Tracing the Spine</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/8000 sec | f/2.8</i></h5>
+              <p class="photoCaption"></p>
+              <p class="photoCaption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Vertical Modals -->
 <div class="modal fade" id="exampleModalVertical" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
