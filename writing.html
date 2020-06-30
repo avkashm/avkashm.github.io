@@ -54,6 +54,16 @@ body, html {
   background-size: cover;
   position: relative;
 }
+
+.article {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.article:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 </style>
 
 <head>
@@ -75,9 +85,20 @@ body, html {
   <a href="/index.html">Home</a>
 </div>
 
-<div>
-  <h3 class="w3-center">Ironic isn't it</h3>
+<div class="center">
+  <h2 style="color:black; text-align: center ">Medium Articles</h2>
+
+<!-- Article Links --> 
+<div class="articleContainer">
+  <div class="col-4 article">
+    <div id="medium-widget"></div>
+  </div>
 </div>
+    
+
+
+<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+<script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@avkashmukhi","postsPerLine":3,"limit":3,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"original"}})</script>
 
 <script>
   var prevScrollpos = window.pageYOffset;
