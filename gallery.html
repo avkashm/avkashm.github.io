@@ -10,6 +10,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
 
 <style>
@@ -107,7 +109,7 @@ body, html {
 
 body.modal-open {
   height: 100vh;
-  overflow-y: hidden;
+  overflow: visible;
 }
 
 .photoCaption {
@@ -263,6 +265,14 @@ body.modal-open {
     }
     prevScrollpos = currentScrollPos;
   }
+
+const kami = {
+  title: 'Kami',
+  iso: 'ISO 100',
+  shutter: '1/1000 sec',
+  aperature: 'f/2.8',
+  caption: 'Jin could not have chosen to smoke in a more badass place as this cumulo nimbus cloud erupted over Western Tokyo before sunset'
+};
 
 </script>
 
