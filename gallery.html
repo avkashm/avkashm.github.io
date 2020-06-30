@@ -110,6 +110,10 @@ body.modal-open {
   overflow-y: hidden;
 }
 
+.photoCaption {
+  color: white;
+}
+
 </style>
 
 <head>
@@ -145,10 +149,10 @@ body.modal-open {
 
   <div class="column">
 
-    <img src="./images/gallery/kyotoladyPre.jpg" style="width:100%" data-toggle="modal" data-target="#exampleModal">
+    <img src="./images/gallery/kyotoladyPre.jpg" style="width:100%">
     <!-- ISO-200|1/2500 sec|f/3.2 -->
 
-    <img src="./images/gallery/kamiPre.jpg" style="width:100%">
+    <img src="./images/gallery/kamiPre.jpg" style="width:100%" data-toggle="modal" data-target="#exampleModalHorizontal">
     <!-- ISO-100|1/1000 sec|f/2.8 -->
 
     <img src="./images/gallery/kyotogardenPre.jpg" style="width:100%">
@@ -183,7 +187,7 @@ body.modal-open {
 
   <div class="column">
 
-    <img src="./images/gallery/climbPre.jpg" style="width:100%">
+    <img src="./images/gallery/climbPre.jpg" style="width:100%" data-toggle="modal" data-target="#exampleModalVertical">
     <!-- ISO-100|1/800 sec|f/6.3 -->
 
     <img src="./images/gallery/climateprotestPre.jpg" style="width:100%">
@@ -204,15 +208,9 @@ body.modal-open {
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Kyoto Lady</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
       <div class="modal-body">
         <div class="column">
           <div class="row">
@@ -220,9 +218,31 @@ body.modal-open {
               <img src="./images/gallery/kami.jpg" style="width: 100%">
             </div>
             <div class="col-4 w3-center">
-              <h3 style="color: white">Kyoto Lady</h3>
-              <h5 style="color: white"> ISO 200 | 1/3200 sec | f/3.5</h5>
-              <p style="color: white"> This kyoto lady walked right in the frame thank you </p>
+              <h3 class="photoCaption">Kami</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/1000 sec | f/2.8</i></h5> 
+              <p class="photoCaption">Jin could not have chosen to smoke in a more badass place as this cumulo nimbus cloud erupted over Western Tokyo before sunset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalVertical" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column">
+          <div class="row">
+            <div class="col-4 w3-center">
+              <img src="./images/gallery/climb.jpg" style="width: 100%">
+            </div>
+            <div class="col-8 w3-center">
+              <h3 class="photoCaption">Second Attempt</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/800 sec | f/6.3</i></h5>
+              <p class="photoCaption">The three climbers from Shizuoka started earlier in the morning than anyone else, in their determined second attempt to summit one of the most iconic peaks in the Northern Japanese Alps: Shirouma-Dake</p>
             </div>
           </div>
       </div>
