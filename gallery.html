@@ -23,6 +23,10 @@ body, html {
   background-color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -97,6 +101,13 @@ body, html {
   font-size: 24px;
 }
 
+.navbutton {
+  position: center;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+
 .modal-content {
   max-height: 100%;
   max-width: 100%;
@@ -145,6 +156,11 @@ body.modal-open #gallery{
   <div class="w3-display-middle" style="white-space:nowrap;">
     <h1 style="color:white; text-align: center">Gallery</h1>
     <p style="color:white; text-align: center"><i>"Don't just capture the moment; Tell me a story"</i></p>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <div class="container-fluid w3-center">
+      <a href="#fujigallery" class="btn navbutton" role="button">Mount Fuji</a>
+      <a href="#miscgallery" class="btn navbutton" role="button">Miscellaneous</a>
+    </div>
   </div>
 </div>
 
@@ -156,10 +172,10 @@ body.modal-open #gallery{
 </div>
 
 <!-- Fuji Description -->
-<!-- <div class="w3-display-container fujidescription">
+<div class="w3-display-container fujidescription" id="fujigallery">
   <h2 class="w3-center" style="padding: 12px">Mount Fuji</h2>
-  <p class="w3-center">Description of the shit</p>
-</div> -->
+  <p class="w3-center">Description</p>
+</div>
 
 <!-- Photo Grid -->
 
@@ -222,6 +238,12 @@ body.modal-open #gallery{
     
   </div>
 
+</div>
+
+<!-- Fuji Description -->
+<div class="w3-display-container fujidescription" id="miscgallery">
+  <h2 class="w3-center" style="padding: 12px">Other Pictures</h2>
+  <p class="w3-center">Description</p>
 </div>
 
 
@@ -410,24 +432,23 @@ body.modal-open #gallery{
   </div>
 </div>
 
-<!-- Adjusted for mobile viewing -->
 <div class="modal fade" id="closedforbusinessVertical" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">"Sorry, We Are Closed"</h3>
-              <h5 class="photoCaption"><i>ISO 400 | 1/125 sec | f/2.8</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/closedforbusiness.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">"Sorry, We Are Closed"</h3>
+              <h5 class="photoCaption"><i>ISO 400 | 1/125 sec | f/2.8</i></h5>
               <p class="photoCaption">Right then, the countdown had begun. The next 10 months would be spent moving from city to city, taking up work wherever it came, until the day he could return back to the small mountain hut that had become his home.</p>
               <p class="photoCaption">The cigarette crackled quietly as he drew a long, heavy breath. Junior thrives off of people, talking to them, entertaining them, making them laugh till their ribs hurt and they felt light-headed. Staring at the freshly taped sign that read "Sorry, We Are Closed", he exhaled, longing for the day he could welcome guests back into his home.</p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
@@ -441,18 +462,18 @@ body.modal-open #gallery{
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">Temptation</h3>
-              <h5 class="photoCaption"><i>ISO 400 | 1/320 sec | f/2.8</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/shizu.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">Temptation</h3>
+              <h5 class="photoCaption"><i>ISO 400 | 1/320 sec | f/2.8</i></h5>
               <p class="photoCaption">Shizu-san knelt by the burning bucket of coal, chopsticks in hand, carefully turning the fillets over onto their skin to crisp. Overwhelmed by the aroma of salmon fat dripping on the red hot binchōtan, it took every bit of self-control to resist the temptation to sneak a quick bite.</p>
               <p class="photoCaption">Yet he waited, for every fillet to finish on the grill. He waited, as he assembled the rest of the meal, and called us into the kitchen to be served. He waited, arms across his chest, as we devoured what was likely the best ochazuke we would eat in our lives. He waited, as we begged for seconds, eagerly serving only the most perfectly crisped and pink flakes of salmon that were left.</p>
               <p class="photoCaption">Only then did he take his first bite.</p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
@@ -466,17 +487,17 @@ body.modal-open #gallery{
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">A Different Kind of Summer</h3>
-              <h5 class="photoCaption"><i>ISO 400 | 1/100 sec | f/3.5</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/breakfast.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">A Different Kind of Summer</h3>
+              <h5 class="photoCaption"><i>ISO 400 | 1/100 sec | f/3.5</i></h5>
               <p class="photoCaption">Hassy squinted into the binoculars, twisting them into focus as gazed at the neon specs of floats and sun umbrellas scattered across the Chigasaki shoreline. It was the final days of the Obon holidays in late August. Families were flocking to the beaches to get in one last day of sun before returning to school and work.</p>
               <p class="photoCaption">Lowering the binoculars, he shuffled back into the hut, quickly sliding the door shut behind him. He knelt by the bucket of coal, warming his hands and face as he watched Junior place his breakfast on the grill to toast. Hassy gobbled up his bread and went straight back to work, to finish closing up the hut. He loved the two months he spent on up Fuji, but all he could think about was how ready he was to spend a day in the ocean, soaking up the last rays of the summer sun.</p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
@@ -490,18 +511,18 @@ body.modal-open #gallery{
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">Sheer Joy of Silence</h3>
-              <h5 class="photoCaption"><i>ISO 100 | 1/500 sec | f/2.8</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/daniel.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">Sheer Joy of Silence</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/500 sec | f/2.8</i></h5>
               <p class="photoCaption">The others had charged ahead, desperate to get back to the car. After almost 60 hours of hiking, snowshoeing, and camping in frozen mountains of the Adirondacks, they were ready to feel their fingers and toes again.</p>
               <p class="photoCaption">Daniel came to a stop, as the golden glow of the sun seeped its way through the trees, illuminating the clearing. Looking up at the towering white giants above, he stood completely still, smiling with an almost child-like sense of awe and wonder in his eyes, as the pure silence and calm of the forest blanketed him.</p>
               <p class="photoCaption">For a brief moment, I forgot about the three days of wet winter gear pulling on my shoulders, and about the piercing pain shooting up my suspiciously purple left foot. It all disappeared for a second, as I watched Daniel savor this rare moment of sheer silence.</p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
@@ -515,17 +536,17 @@ body.modal-open #gallery{
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">Leading the Way</h3>
-              <h5 class="photoCaption"><i>ISO 100 | 1/800 sec | f/6.3</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/climb.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">Leading the Way</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/800 sec | f/6.3</i></h5>
               <p class="photoCaption">The three climbers from Shizuoka departed before dawn from the bottom of the Daisekkei, in their second attempt to summit this iconic peak of the Northern Japanese Alps. In the 7 years since their last attempt, the trio had found their stride. They were ready to finally knock Mt. Shirouma off their list.</p>
               <p class="photoCaption">One steady step at a time, they marched their way up, paving their own path through the perinneal snow valley. </p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
@@ -539,16 +560,16 @@ body.modal-open #gallery{
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">Thank You Young People</h3>
-              <h5 class="photoCaption"><i>ISO 200 | 1/1250 sec | f/4.5</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/climateprotest.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">Thank You Young People</h3>
+              <h5 class="photoCaption"><i>ISO 200 | 1/1250 sec | f/4.5</i></h5>
               <p class="photoCaption">Pls write something :(</p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
@@ -562,16 +583,16 @@ body.modal-open #gallery{
       <div class="modal-body">
         <div class="column">
           <div class="row">
-            <div class="col-12 col-lg-4 w3-center align-self-center">
-              <h3 class="photoCaption">Overstay Your Welcome</h3>
-              <h5 class="photoCaption"><i>ISO 100 | 1/100 sec | f/10.0</i></h5>
-            </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
             <div class="col-12 col-lg-4 w3-center">
               <img src="./images/gallery/bubbles.jpg" style="width: 100%">
             </div>
             <div class="col-12 col-lg-4 w3-center align-self-center">
+              <h3 class="photoCaption">Overstay Your Welcome</h3>
+              <h5 class="photoCaption"><i>ISO 100 | 1/100 sec | f/10.0</i></h5>
               <p class="photoCaption">Pls write something :(</p>
             </div>
+            <div class="col-12 col-lg-2 w3-center align-self-center"></div>
           </div>
         </div>
       </div>
